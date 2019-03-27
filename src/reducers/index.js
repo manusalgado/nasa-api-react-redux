@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux'
+import { astronomy } from './astronomy'
 
-const rootReducer = combineReducers({
-
+export default combineReducers({
+    astronomy
 })
-
-export default rootReducer

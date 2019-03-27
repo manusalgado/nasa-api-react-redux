@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AstronomyContainer from './components/AstronomyContainer'
+import VisibleAstronomy from '../src/containers/VisibleAstronomy'
 import Header from './components/Header'
 import 'materialize-css/dist/css/materialize.min.css'
 
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <AstronomyContainer />
+        <VisibleAstronomy />
       </div>
     );
   }
