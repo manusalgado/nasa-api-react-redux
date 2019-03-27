@@ -2,7 +2,8 @@ import axios from 'axios'
 
 
 export const actionsType = {
-    RECEIVE_DATA: 'RECEIVE_DATA'
+    RECEIVE_DATA: 'RECEIVE_DATA',
+    ERROR: 'ERROR',
 }
 
 export const getData = () => dispatch => {
@@ -16,12 +17,13 @@ export const getData = () => dispatch => {
             dispatch(receiveData(response))
         })
         .catch(error => {
-            console.warn(error)
+            console.log(error);
+            
         })
 
 }
 
-const receiveData = response =>({
+const receiveData = response => ({
     type: actionsType.RECEIVE_DATA,
     astronomy: response.data
 })

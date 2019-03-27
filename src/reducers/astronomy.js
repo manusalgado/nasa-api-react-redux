@@ -1,7 +1,7 @@
 import { actionsType } from '../actions'
 
 const initialState = {
-    astronomy: {}
+    astronomy: {},
 }
 
 const astronomy = (state = initialState, action) => {
@@ -9,10 +9,10 @@ const astronomy = (state = initialState, action) => {
         case actionsType.RECEIVE_DATA:
         return {
             ...state, 
-            astronomy: action.astronomy
+            astronomy: action.astronomy,
         }            
         default:
-        return state
+        return state;
     }
 }
 

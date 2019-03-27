@@ -12,7 +12,6 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 
 const store = createStore(reducers,  composeWithDevTools(applyMiddleware(thunkMiddleware)))
 console.log(store.getState())
-console.log(store.subscribe(reducers))
 
 
 

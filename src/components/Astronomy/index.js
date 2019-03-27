@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-const Astronomy = () => {
+const Astronomy = (props) => {
+    console.log(props.astronomy);
+    
     return (
         <div>
-            hey
+            <p>{props.astronomy.astronomy.copyright}</p>
         </div>
     )
 }

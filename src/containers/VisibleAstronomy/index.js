@@ -10,13 +10,13 @@ class VisibleAstronomy extends React.Component {
     render(){
         const {astronomy} = this.props
         return (
-            <Astronomy astronomy={astronomy} />
+            <Astronomy astronomy={astronomy}/>
         )
     }
 }
 
 const mapStateToProps = state => ({
-    astronomy: state.astronomy
+    astronomy: state.astronomy,
 })
 
 const mapDispatchToProps = dispatch => ({
